@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/ezetapandroidassignment"
+        android:textColor="@color/higlight_color"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/heading"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edt_uitype"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@null"
+            android:hint="@string/uitype"
+            android:inputType="number"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/light_black"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_black" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@null"
+            android:hint="@string/enter_your_name"
+            android:inputType="text"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/light_black"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_black" />
+
+        <EditText
+            android:id="@+id/edt_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@null"
+            android:hint="@string/enter_your_phone_no"
+            android:inputType="number"
+            android:textColor="@color/light_black"
+            android:textColorHint="@color/light_black"
+            android:textSize="@dimen/_10sdp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/light_black" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/button_gradient"
+            android:text="@string/submit"
+            android:textColor="@color/light_silver"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
